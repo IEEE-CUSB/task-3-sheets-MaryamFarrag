@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <title>IEEE Form</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    </head>
+    <body>
+        <section id="form" class="py-3">
+            <header class="w-75 m-auto">
+                <img class="float-left" src="images/IEEE_White_Logo.png">
+                <h1 class="text-center">IEEE Workshops Form</h1>
+                <hr class="w-75">
+            </header>
+            <form class="text-center m-auto mt-5 p-3 w-75" method="POST" action="http://localhost:3000/">
+                <div class="float-left">
+                    <strong>*Required</strong>
+                </div>
+                <div class="clearfix"></div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="req">Name:</label><br>
+                                <input placeholder="ex: John Doe" id="name" class="m-auto my-input w-100" name="name" type="name">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group email">
+                                <label>Email:</label><br>
+                                <input placeholder="ex: John_Doe98@gmail.com" class="m-auto my-input w-100" name="email" type="email">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Phone Number:</label><br>
+                                <input placeholder="ex: +0123456789" class="m-auto my-input w-100" name="phoneNumber" type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>University:</label><br>
+                                <input placeholder="ex: Cairo University" class="m-auto my-input w-100" name="university" type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Faculty:</label><br>
+                                <input placeholder="ex: Computer Science" class="m-auto my-input w-100" name="faculty" type="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+             
+             
+                <div class="form-group">
+                    <label class="req">Academic Year:</label><br>
+                   <select id="year" name="academicYear" class="m-auto my-input w-75">
+                       <option value="first">First</option>
+                       <option value="second">Second</option>
+                       <option value="third">Third</option>
+                       <option value="fourth">Fourth</option>
+                       <option value="fifth">Fifth</option>
+                   </select>
+                </div>
+                <div class="form-group">
+                    <div class="container ">
+                        <label class="req">Preferred Workshops:(Choose Two)</label>
+                        <div id="chosen">
+                                <p id="first"></p>
+                                <p id="second"></p>
+                            </div>
+                            <div class="pref">
+                                <div class="workshop">
+                                    <label class="btn"><img src="images/web-development.png" alt="web-dev" class="img-thumbnail img-check">
+                                        <span class="tooltip-text">You will able to create your own website,as<br>there would be two projects on web<br>
+                                        designing through the workshop plus<br> gaining enough knowledge to be
+                                        qualified<br>for the advanced levels.<br>
+                                        </span>
+                                    </label><br>Web Development
+                                    <input type="checkbox" name="workshop" id="web-dev" value="Web development" class="hidden" autocomplete="off">
+                                </div>
+
+                                <div class="workshop">
+                                    <label class="btn"><img src="images/android-dev.jpg" alt="android-dev" class="img-thumbnail img-check">
+                                        <span class="tooltip-text">In our workshop you’ll experience two<br> projects;
+                                             a practical project through the<br> workshop,
+                                            and the final project competition<br>by the end of the course and<br> the winning team will be rewarded.
+                                        </span>
+                                    </label><br>Android Development
+                                    <input type="checkbox" name="workshop" id="android" value="Android" class="hidden" autocomplete="off">
+                                </div>
+
+                                <div class="workshop">
+                                    <label class="btn"><img src="images/arduino.png" alt="arduino" class="img-thumbnail img-check">
+                                        <span class="tooltip-text">This workshop is designed to give you<br> practical
+                                                experience in designing, coding,<br> and implementing your own system.
+                                        </span>
+                                    </label><br>Arduino
+                                    <input type="checkbox" name="workshop" id="arduino" value="Arduino" class="hidden" autocomplete="off">
+                                </div>
+                                <div class="workshop">
+                                    <label class="btn"><img src="images/rasberry-pi.png" alt="raspberry-pi" class="img-thumbnail img-check">
+                                    <span class="tooltip-text">This workshop aims to guide you how to use<br> the “Raspberry-pi” board using the newly<br> released “Windows IoT core” OS.<br> Step by Step starting
+                                         by developing basic<br> applications till establishing the advanced<br> ones communicating with other devices<br> and the cloud.
+                                    </span>
+                                    </label><br>Raspberry-Pi
+                                    <input type="checkbox" name="workshop" id="raspberry" value="Raspberry" class="hidden" autocomplete="off">
+                                </div>
+
+                                <div class="workshop">
+                                    <label class="btn"><img src="images/embedded.jpg" alt="embedded" class="img-thumbnail img-check">
+                                        <span class="tooltip-text">IMT ,which will support you to build your<br> genuine career. You will also have the<br> opportunity to experience the simulation<br> to the way they work practically.</span>
+                                    </label><br>Embedded System
+                                    <input type="checkbox" name="workshop" id="embedded" value="Embedded System" class="hidden" autocomplete="off">
+
+                                </div>
+                            </div>	
+                        </div>
+
+
+
+                   <!---->
+                </div>
+                <button class="btn my-btn">Submit</button>
+                
+            </form>
+
+        </section>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
